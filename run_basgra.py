@@ -4,30 +4,38 @@ from lib_read_input_files import *
 from lib_basgra import *
 # basgra model as a function
 from basgra import *
-#basgra(params, weather, ndays)
-
+# Read arguments given to this script
+import argparse
+parser = argparse.ArgumentParser(description="Runs the BASGRA simulation")
+parser.add_argument("params_fname", default='params.csv', help="The CSV file holding the input parameters")
+parser.add_argument("weather_fname", default='weather.csv', help="The CSV file holding the weather data, the RS data (Evap, tran, LAI & cut dates)")
+parser.add_argument("startdoy", default=1, type=int, help="The DOY at which the simulation starts")
+parser.add_argument("enddoy", default=365, type=int, help="The DOY at which the simulation stops")
+parser.add_argument("startyear", default=2002, type=int, help="The YEAR at which the simulation starts")
+parser.add_argument("endyear", default=2002, type=int, help="The YEAR at which the simulation stops")
+args = parser.parse_args()
 
 # Input definition 
-params_fname = 'params.csv'
-weather_fname = 'weather.csv'
-startdoy = 1
-enddoy = 365
-startyear = 2002
-endyear = 2002
+#params_fname = 'params.csv'
+#weather_fname = 'weather.csv'
+#startdoy = 1
+#enddoy = 365
+#startyear = 2002
+#endyear = 2002
 
 # Create out_dates list
 import datetime
 out_dates = []
-d = datetime.date(startyear,1,1)+datetime.timedelta(days=startdoy)
-while d <= datetime.date(endyear,1,1)+datetime.timedelta(days=enddoy):
+d = datetime.date(args.startyear,1,1)+datetime.timedelta(days=args.startdoy)
+while d <= datetime.date(args.endyear,1,1)+datetime.timedelta(days=args.enddoy):
     out_dates.append(d)
     d += datetime.timedelta(days=1)
 
 
 # Read Params file (params.csv) and create array
-params = read_params(params_fname)
+params = read_params(args.params_fname)
 # Read Weather file (weather.csv) and create array
-weather = read_weather(weather_fname)
+weather = read_weather(args.weather_fname)
 
 def run_basgra(params, weather, startdoy, enddoy, startyear, endyear):
     # Run BASGRA
@@ -141,4 +149,4 @@ def run_basgra(params, weather, startdoy, enddoy, startyear, endyear):
     plt.show()
 
 # run the main function
-run_basgra(params, weather, startdoy, enddoy, startyear, endyear)
+run_basgra(params, weather, args.startdoy, args.enddoy, args.startyear, args.endyear)
