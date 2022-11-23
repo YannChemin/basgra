@@ -1,0 +1,1335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>lib_basgra module &mdash; BasGra 0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="BasGra 0.1 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> BasGra
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">How to contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#how-to-test">How to test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#how-to-use-basgra-software">How to use BasGra software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html#other-related-pasture-models">Other related pasture models</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BasGra</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>lib_basgra module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/lib_basgra.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="module-lib_basgra">
+<span id="lib-basgra-module"></span><h1>lib_basgra module<a class="headerlink" href="#module-lib_basgra" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.allocation">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">allocation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">glvsi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gstsi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">daylge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allotot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gressi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.allocation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allocation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>glvsi</strong> – Potential growth rate of leaf mass (g C/m2/day)</p></li>
+<li><p><strong>gstsi</strong> – Potential growth rate of stems (g C/m2/day)</p></li>
+<li><p><strong>daylge</strong> – Day length effect on allocation, tillering, leaf appearance, leaf elongation (-)</p></li>
+<li><p><strong>allotot</strong> – Allocation of carbohydrates to sinks other than hardening (g C/m2/day)</p></li>
+<li><p><strong>gressi</strong> – Sink strength of reserve pool (g C/m2/day)</p></li>
+<li><p><strong>yg</strong> – Growth yield per unit expended carbohydrate (g C/G C)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result gres</dt>
+<dd class="field-even"><p>Gross growth rate of reserve pool, uncorrected for remobilisation (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result glv</dt>
+<dd class="field-odd"><p>Growth of leaf mass (g C/m2/day)</p>
+</dd>
+<dt class="field-even">Result gst</dt>
+<dd class="field-even"><p>Growth of stems (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result grt</dt>
+<dd class="field-odd"><p>Growth of roots (g C/m2/day)</p>
+</dd>
+<dt class="field-even">Result respgsh</dt>
+<dd class="field-even"><p>Respiration associated with shoot growth (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result respgrt</dt>
+<dd class="field-odd"><p>Respiration associated with root growth (g C/m2/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.anaerobicdamage">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">anaerobicdamage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">permgas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tanaer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ldt50a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ldt50b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krdranaer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.anaerobicdamage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Anaerobic Damage</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>permgas</strong> – Permeability of soil surface to gas exchange (-/day)</p></li>
+<li><p><strong>tanaer</strong> – Time since start anaerobic conditions (d)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>ldt50a</strong> – Intercept of linear dependence of LD50 on lT50 (day)</p></li>
+<li><p><strong>ldt50b</strong> – Slope of linear dependence of LD50 on LT50 (day/C)</p></li>
+<li><p><strong>lt50</strong> – Sensitivity to Frost (Lethal Temperature 50%) Temperature that kills half the plants in a day (C)</p></li>
+<li><p><strong>krdranaer</strong> – Maximum relative death rate due to anearobic conditions (-/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result dtanaer</dt>
+<dd class="field-even"><p>Change in days since start anaerobic conditions (day/day)</p>
+</dd>
+<dt class="field-odd">Result rdrtox</dt>
+<dd class="field-odd"><p>Relative death rate due to anaerobic conditions (day/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.biomass">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">biomass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cocresmx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cst</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.biomass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Biomass</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cocresmx</strong> – Maximum concentration of reserves in aboveground biomass (not stubble) (-)</p></li>
+<li><p><strong>clv</strong> – Carbon in leaves (g C / m2)</p></li>
+<li><p><strong>cres</strong> – Carbon in reserves (g C / m2)</p></li>
+<li><p><strong>cst</strong> – Carbon in stems (g C / m2)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result cresmx</dt>
+<dd class="field-even"><p>Maximum amount of reserves (g C / m2)</p>
+</dd>
+<dt class="field-odd">Result resnor</dt>
+<dd class="field-odd"><p>Normalised concentration of reserves (-)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.ddayl">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">ddayl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.ddayl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute day length</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>marcel van oijen (ceh-edinburgh)</p>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><p>Calculate day length (d d-1) from julian day and latitude (lat, degn)</p>
+</dd>
+</dl>
+<p>:param doy Day Of Year (1-366)
+:param lat Latitude (degrees)
+:result dayl Day length (d/d)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.evaptrtrf">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">evaptrtrf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pevap</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcfc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ptran</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tranco</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcwet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.evaptrtrf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaporation, Transpiration &amp; Transpiration Fraction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)</p></li>
+<li><p><strong>wal</strong> – Soil water amount, liquid (mm)</p></li>
+<li><p><strong>wcad</strong> – Water concentration at air dryness (m3/m3)</p></li>
+<li><p><strong>pevap</strong> – Potential rate of evaporation from the soil (mm/day)</p></li>
+<li><p><strong>wcfc</strong> – Water concentration at field capacity (m3/m3)</p></li>
+<li><p><strong>wcwp</strong> – Water concentration at wilting point (m3/m3)</p></li>
+<li><p><strong>ptran</strong> – Potential transpiration rate (mm/day)</p></li>
+<li><p><strong>tranco</strong> – Transpiration coefficient (mm/day)</p></li>
+<li><p><strong>wcst</strong> – Water concentration at saturation (m3/m3)</p></li>
+<li><p><strong>wcwet</strong> – Water concentration above which transpiration is reduced (m3/m3)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result evap</dt>
+<dd class="field-even"><p>Evaporation of water from soil surface (mm/day)</p>
+</dd>
+<dt class="field-odd">Result tran</dt>
+<dd class="field-odd"><p>Transpiration of water from soil surface (mm/day)</p>
+</dd>
+<dt class="field-even">Result tranrf</dt>
+<dd class="field-even"><p>Transpiration realisation factor (-)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.foliage1">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">foliage1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tbase</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">daylge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slamax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fslamin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resnor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.foliage1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Foliage 1</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tbase</strong> – Minimum value of effective temperature for leaf elongation (C)</p></li>
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>daylge</strong> – Day length effect on allocation, tillering, leaf appearance, leaf elongation (-)</p></li>
+<li><p><strong>slamax</strong> – Maximum SLA of new leaves (m2 leaf g / C)</p></li>
+<li><p><strong>fslamin</strong> – Minimum SLA of new leaves as a fraction of maximum possible SLA (-)</p></li>
+<li><p><strong>resnor</strong> – Normalised concentration of reserves (-)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result efftmp</dt>
+<dd class="field-even"><p>Effective temperature for leaf elongation (C)</p>
+</dd>
+<dt class="field-odd">Result lerv</dt>
+<dd class="field-odd"><p>Elongation rate of leaves on non-elongating tillers (m/day)</p>
+</dd>
+<dt class="field-even">Result lerg</dt>
+<dd class="field-even"><p>Elongation rate of leaves on elongating tillers (m/day)</p>
+</dd>
+<dt class="field-odd">Result slamin</dt>
+<dd class="field-odd"><p>Minimum SLA of new leaves (= SLAMAX * FSLAMIN) (m2 leaf / g C)</p>
+</dd>
+<dt class="field-even">Result slanew</dt>
+<dd class="field-even"><p>SLA of new leaf (m2 leaf / g C)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.foliage2">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">foliage2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slanew</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">glv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tbase</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noharv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tranrf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">daylge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phenrf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">laitil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">laieft</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lai</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fsmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resnor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tilv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toptge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tv2til</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rgenmx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vern</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dayl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">daylg1g2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tilg1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rgrtg1g2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.foliage2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Foliage 2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>slanew</strong> – SLA of new leaf (m2 leaf g/C-)</p></li>
+<li><p><strong>glv</strong> – Growth rate of leaf mass (g C/m2/day)</p></li>
+<li><p><strong>tsurf</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>tbase</strong> – Minimum value of effective temperature for leaf elongation (C)</p></li>
+<li><p><strong>phy</strong> – Phyllochron (C day)</p></li>
+<li><p><strong>noharv</strong> – Flag indicating that the current day is not a harvest day (-)</p></li>
+<li><p><strong>tranrf</strong> – Transpiration realisation factor (-)</p></li>
+<li><p><strong>daylge</strong> – Day length effect on allocation, tillering, leaf appearance, leaf elongation (-)</p></li>
+<li><p><strong>fractv</strong> – Fraction of tillers that is not elongating (-)</p></li>
+<li><p><strong>phenrf</strong> – Effect of phenological stage on leaf elongation and appearance in elongating tillers (-)</p></li>
+<li><p><strong>laitil</strong> – Maximum ratio of tiller and leaf apearance at low leaf area index (-)</p></li>
+<li><p><strong>laieft</strong> – Decrease in tillering with leaf area index (m2/m2 leaf)</p></li>
+<li><p><strong>lai</strong> – Leaf Area Index (m2 leaf / m2)</p></li>
+<li><p><strong>fsmax</strong> – Maximum ratio of tiller and leaf appearance based on sward geometry (-)</p></li>
+<li><p><strong>resnor</strong> – Normalised concentration of reserves (-)</p></li>
+<li><p><strong>tilv</strong> – Non-elongating tiller density (-/m2)</p></li>
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>toptge</strong> – Optimum temperature for vegetative tillers becoming generative (C)</p></li>
+<li><p><strong>tv2til</strong> – Relative death rate of non-elongating tillers (-/day)</p></li>
+<li><p><strong>rgenmx</strong> – Maximum relative rate of tillers becoming elongating tillers (-/day)</p></li>
+<li><p><strong>vern</strong> – Vernalization status (-)</p></li>
+<li><p><strong>dayl</strong> – Day length (day/day)</p></li>
+<li><p><strong>daylg1g2</strong> – Minimum day length above which generative tillers can start elongating (by moving from TILG1 to TILG2). (day/day)</p></li>
+<li><p><strong>tilg1</strong> – Non-elongating generative tiller density (-/m2)</p></li>
+<li><p><strong>rgrtg1g2</strong> – Relative rate of TILG1 becoming TILG2 (tiller/tiller/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result glai</dt>
+<dd class="field-even"><p>Growth rate of leaf area (m2 leaf /m2/day)</p>
+</dd>
+<dt class="field-odd">Result gtilv</dt>
+<dd class="field-odd"><p>Growth of non-elongating tillers (g C/m2/day)</p>
+</dd>
+<dt class="field-even">Result tilvg1</dt>
+<dd class="field-even"><p>Number of non-elongating tillers (tillers)</p>
+</dd>
+<dt class="field-odd">Result tilg1g2</dt>
+<dd class="field-odd"><p>Number of Non-elongating generative tiller becoming elongating generative tillers (tillers)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.frdrunir">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">frdrunir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wcfc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">infil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pooldrain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evap</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tran</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">was</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">irrigf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.frdrunir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Freezing, Thawing, Draining, Runoff, Irrigation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wcfc</strong> – Water concentration at field capacity (m3/m3)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)</p></li>
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>wcst</strong> – Water concentration at saturation (m3/m3)</p></li>
+<li><p><strong>infil</strong> – Water flow into soil from precipitation and snow melt (mm/day)</p></li>
+<li><p><strong>pooldrain</strong> – Water flow from pool to soil (mm/day)</p></li>
+<li><p><strong>wal</strong> – Soil water amount, liquid (mm)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>evap</strong> – Evaporation of water from soil surface (mm/day)</p></li>
+<li><p><strong>tran</strong> – Transpiration of water from soil surface (mm/day)</p></li>
+<li><p><strong>frate</strong> – Rate of increase of frost layer depth (m/day)</p></li>
+<li><p><strong>was</strong> – Soil water amount: solid (=ice) (mm)</p></li>
+<li><p><strong>drate</strong> – Maximum drainage rate (mm/day)</p></li>
+<li><p><strong>irrigf</strong> – Irrigation relative to what would maintain field capacity (-)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result freezel</dt>
+<dd class="field-even"><p>Freezing of soil water (mm/day)</p>
+</dd>
+<dt class="field-odd">Result thaws</dt>
+<dd class="field-odd"><p>Water flow to soil pool from thawing of frozen soil (mm/day)</p>
+</dd>
+<dt class="field-even">Result drain</dt>
+<dd class="field-even"><p>Drainage rate below the root zone (mm/day)</p>
+</dd>
+<dt class="field-odd">Result runoff</dt>
+<dd class="field-odd"><p>Loss of water by runoff (mm/day)</p>
+</dd>
+<dt class="field-even">Result irrig</dt>
+<dd class="field-even"><p>Irrigation rate (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.frozensoil">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">frozensoil</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcfc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">was</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdasoil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rhowater</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latentheat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.frozensoil" title="Permalink to this definition">¶</a></dt>
+<dd><p>Frozen Soil Variation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)</p></li>
+<li><p><strong>wcfc</strong> – Water concentration at field capacity (m3/m3)</p></li>
+<li><p><strong>was</strong> – Soil water amount, solid (=ice) (mm)</p></li>
+<li><p><strong>wcl</strong> – Water concentration in non-frozen soil (m3/m3)</p></li>
+<li><p><strong>tsurf</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>lambdasoil</strong> – Soil parameter (J/m/C/day)</p></li>
+<li><p><strong>rhowater</strong> – Density of water (kg/m3)</p></li>
+<li><p><strong>latentheat</strong> – Latent heat of water fusion (J/kg)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result fsv</dt>
+<dd class="field-even"><p>Frozem Soil variation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.growth">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">growth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tranrf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">luemxq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noharv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tcres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resphardsi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cresmx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tilg2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cstavm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simax1t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phenrf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nellvm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lerv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tilv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lfwidv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lerg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lfwidg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slanew</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">daylge</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.growth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Growth</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parint</strong> – PAR interception (mol PAR /m2/day)</p></li>
+<li><p><strong>tranrf</strong> – Transpiration realisation factor (-)</p></li>
+<li><p><strong>luemxq</strong> – Light-use efficiency (mol CO2/mol PAR)</p></li>
+<li><p><strong>noharv</strong> – Flag indicating that the current day is not a harvest day (-)</p></li>
+<li><p><strong>cres</strong> – Carbon in reserves (g C/m2)</p></li>
+<li><p><strong>tcres</strong> – Time constant of mobilisation of reserves (day)</p></li>
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>resphardsi</strong> – Sink strength from carbohydrate demand of hardening (g C/m2/day)</p></li>
+<li><p><strong>cresmx</strong> – Maximum amount of reserves (g C/m2)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>tilg2</strong> – Elongating generative tiller density (-/m2)</p></li>
+<li><p><strong>cst</strong> – Weight of stems (g C/m2)</p></li>
+<li><p><strong>cstavm</strong> – Maximum size of elongating tillers (g C/tiller)</p></li>
+<li><p><strong>simax1t</strong> – Sink strength of small elongating tillers (g C/tiller)</p></li>
+<li><p><strong>phenrf</strong> – Effect of phenological stage on leaf elongation and appearance in elongating tillers (-)</p></li>
+<li><p><strong>nellvm</strong> – Number of elongating leaves per non-elongating tiller (-/tiller)</p></li>
+<li><p><strong>lerv</strong> – Elongation rate of leaves on non-elongating tillers (m/day)</p></li>
+<li><p><strong>tilv</strong> – Non-elongating tiller density (-/m2)</p></li>
+<li><p><strong>lfwidv</strong> – Leaf width on non-elongating tillers (m)</p></li>
+<li><p><strong>lerg</strong> – Elongation rate of leaves on elongating tillers (m/day)</p></li>
+<li><p><strong>lfwidg</strong> – Leaf width on elongating tillers (m)</p></li>
+<li><p><strong>shape</strong> – Area of a leaf relative to a rectangle of same length and width (-)</p></li>
+<li><p><strong>slanew</strong> – SLA of new leaf (m2 leaf g/C-)</p></li>
+<li><p><strong>yg</strong> – Growth yield per unit expended carbohydrate (g C / g C)</p></li>
+<li><p><strong>daylge</strong> – Day length effect on allocation, tillering, leaf appearance, leaf elongation (-)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result resmob</dt>
+<dd class="field-even"><p>Mobilisation of reserves (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result resphard</dt>
+<dd class="field-odd"><p>Plant hardening respiration (g C/m2/day)</p>
+</dd>
+<dt class="field-even">Result gres</dt>
+<dd class="field-even"><p>Gross growth rate of reserve pool, uncorrected for remobilisation (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result glv</dt>
+<dd class="field-odd"><p>Growth of leaf mass (g C/m2/day)</p>
+</dd>
+<dt class="field-even">Result gst</dt>
+<dd class="field-even"><p>Growth of stems (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result grt</dt>
+<dd class="field-odd"><p>Growth of roots (g C/m2/day)</p>
+</dd>
+<dt class="field-even">Result respgsh</dt>
+<dd class="field-even"><p>Respiration associated with shoot growth (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result respgrt</dt>
+<dd class="field-odd"><p>Respiration associated with root growth (g C/m2/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.hardening">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">hardening</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">krsr3h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dparam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt50mx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurfdiff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratedmx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resphard</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kresphard</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.hardening" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hardening</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>krsr3h</strong> – Constant in the logistic curve for frost survival (-/C)</p></li>
+<li><p><strong>tsurf</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>lt50</strong> – Sensitivity to Frost (Lethal Temperature 50%) Temperature that kills half the plants in a day (C)</p></li>
+<li><p><strong>dparam</strong> – Constant in the calculation of dehardening rate (-/C/day)</p></li>
+<li><p><strong>lt50mx</strong> – Maximum LT50 (C)</p></li>
+<li><p><strong>tsurfdiff</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>ratedmx</strong> – Maximum dehardening rate (C/day)</p></li>
+<li><p><strong>resphard</strong> – Plant hardening respiration (g C/m2/day)</p></li>
+<li><p><strong>clv</strong> – Carbon in leaves (g C/m2)</p></li>
+<li><p><strong>kresphard</strong> – Carbohydrate requirement of hardening (g C/ g C /C)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result rdrfrost</dt>
+<dd class="field-even"><p>Relative death rate due to frost (-/day)</p>
+</dd>
+<dt class="field-odd">Result hardrate</dt>
+<dd class="field-odd"><p>Hardening (LT50 becoming more negative) (C/day)</p>
+</dd>
+<dt class="field-even">Result dehardrate</dt>
+<dd class="field-even"><p>Dehardening rate (LT50 becoming less negative) (C/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.hardeningsink">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">hardeningsink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rehardredend</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rehardredday</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thardmx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt50mn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hparam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kresphard</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resnor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.hardeningsink" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.harvest">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">harvest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rsgcut</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tilv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tilg2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">claiv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lai</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phen</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hagere</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cst</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.harvest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Harvest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rsgcut</strong> – RS-based observation of grass cut (harvest)</p></li>
+<li><p><strong>tilv</strong> – Non-elongating tiller density (-/m2)</p></li>
+<li><p><strong>tilg2</strong> – Elongating generative tiller density (-/m2)</p></li>
+<li><p><strong>claiv</strong> – Maximum LAI remaining after harvest, when no tillers elongate (m2 leaf / m2)</p></li>
+<li><p><strong>lai</strong> – Leaf area index (m2 leaf / m2)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>clv</strong> – Carbon in leaves (g C/m2)</p></li>
+<li><p><strong>phen</strong> – Phenological stage (-)</p></li>
+<li><p><strong>hagere</strong> – Fraction of reserves in elongating tillers that is harvested (-)</p></li>
+<li><p><strong>cres</strong> – Carbon in reserves (g C/m2)</p></li>
+<li><p><strong>cst</strong> – Carbon in stems (g C/m2)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result harv</dt>
+<dd class="field-even"><p>Flag indicating that the current day is a harvest day (-)</p>
+</dd>
+<dt class="field-odd">Result noharv</dt>
+<dd class="field-odd"><p>Flag indicating that the current day is not a harvest day (-)</p>
+</dd>
+<dt class="field-even">Result fractv</dt>
+<dd class="field-even"><p>Fraction of tillers that is not elongating (-)</p>
+</dd>
+<dt class="field-odd">Result harvla</dt>
+<dd class="field-odd"><p>Harvested leaf area (m2 leaf / m2/day)</p>
+</dd>
+<dt class="field-even">Result harvlv</dt>
+<dd class="field-even"><p>Harvested leaf mass (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result harvph</dt>
+<dd class="field-odd"><p>Resetting of phenological stage by harvesting (-/day)</p>
+</dd>
+<dt class="field-even">Result harvre</dt>
+<dd class="field-even"><p>Harvested reserves (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result harvst</dt>
+<dd class="field-odd"><p>Harvested stem mass (g C/m2/day)</p>
+</dd>
+<dt class="field-even">Result gstub</dt>
+<dd class="field-even"><p>Growth of stubble due to harvest of elongating tillers (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result harvtilg2</dt>
+<dd class="field-odd"><p>Number of elongating generative tillers harvested today (tiller/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.infilrunon">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">infilrunon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poolinfillimit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinfil</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.infilrunon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Infiltration Run-On</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>poolinfillimit</strong> – Soil frost depth limit for water infiltration (m)</p></li>
+<li><p><strong>pinfil</strong> – Infil of Pool (Wsupply - RNINTC) (mm/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result runon</dt>
+<dd class="field-even"><p>Water in excess of what can infiltrate the soil (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.light">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">light</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dayl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">par</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lai</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.light" title="Permalink to this definition">¶</a></dt>
+<dd><p>Light</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dayl</strong> – Day Length (day/day)</p></li>
+<li><p><strong>par</strong> – Daily photosynthetically active radiation (mol PAR/m2/day)</p></li>
+<li><p><strong>k</strong> – PAR extinction coefficient (m2 / m2 leaf)</p></li>
+<li><p><strong>lai</strong> – Leaf Area index (m2 leaf / m2)</p></li>
+<li><p><strong>dtr</strong> – Daily global radiation (MJ GR/m2/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result parav</dt>
+<dd class="field-even"><p>Average PAR during the photoperiod (mumol PAR /m2/s) (micromol par quanta m-2 s-)</p>
+</dd>
+<dt class="field-odd">Result parint</dt>
+<dd class="field-odd"><p>PAR interception (mol PAR /m2/day)</p>
+</dd>
+<dt class="field-even">Result dtrint</dt>
+<dd class="field-even"><p>Interception of global radiation (MJ GR/m2/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.liquidwaterdistribution">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">liquidwaterdistribution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">staywet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snowmelt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwater</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wavail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wmaxstore</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.liquidwaterdistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Liquid Water Distribution</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>staywet</strong> – Liquid water in snow remaining liquid (mm/day)</p></li>
+<li><p><strong>snowmelt</strong> – Snow melting (mm/day)</p></li>
+<li><p><strong>pwater</strong> – Potential water vailable from rain (mm/day)</p></li>
+<li><p><strong>wavail</strong> – Liquid water from rain, snow melt and storage in snow (mm/day)</p></li>
+<li><p><strong>wmaxstore</strong> – Liquid water storage capacity of the snowpack (mm/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result wavail</dt>
+<dd class="field-even"><p>Liquid water from rain, snow melt and storage in snow (mm/day)</p>
+</dd>
+<dt class="field-odd">Result wremain</dt>
+<dd class="field-odd"><p>Liquid water staying in snow pack (mm/day)</p>
+</dd>
+<dt class="field-even">Result wsupply</dt>
+<dd class="field-even"><p>Liquid water not staying in snow pack (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.lueco2tm">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">lueco2tm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rubisc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">co2a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kluetilg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parav</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.lueco2tm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate luemxq (mol co2 mol-1 par quanta)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>rubisc</strong> – Rubisco content of upper leaves (g/m2 leaf)</p></li>
+<li><p><strong>co2a</strong> – CO2 concentration in atmosphere (ppm)</p></li>
+<li><p><strong>kluetilg</strong> – LUE-increase with increasing fraction elongating tillers (-)</p></li>
+<li><p><strong>fractv</strong> – Fraction of tillers that is not elongating (-)</p></li>
+<li><p><strong>k</strong> – PAR extinction coefficient (m2 / m2 leaf)</p></li>
+<li><p><strong>parav</strong> – Average PAR during the photoperiod (mumol PAR /m2/s) (micromol par quanta m-2 s-)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result rehardredstart</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">Result resphardsi</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.o2fluxes">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">o2fluxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fo2mx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fgas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rplantaer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krtotaer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">permgas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">o2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.o2fluxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>O2 Fluxes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fo2mx</strong> – Maximum oxygen fraction of soil gas (mol O2/mol gas)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)</p></li>
+<li><p><strong>fgas</strong> – Soil pore space (potentially gaseous) (m3/m3)</p></li>
+<li><p><strong>rplantaer</strong> – Aerobic plant respiration (g C/m2/day)</p></li>
+<li><p><strong>krtotaer</strong> – Ratio of total to aerobic respiration (-)</p></li>
+<li><p><strong>permgas</strong> – Permeability of soil surface to gas exchange (-/day)</p></li>
+<li><p><strong>o2</strong> – Soil oxygen content (mol/m2)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result o2mx</dt>
+<dd class="field-even"><p>Maximum oxygen content of soil (mol/m2)</p>
+</dd>
+<dt class="field-odd">Result o2out</dt>
+<dd class="field-odd"><p>Efflux of oxygen from the soil (mol/m2/day)</p>
+</dd>
+<dt class="field-even">Result o2in</dt>
+<dd class="field-even"><p>Influx of oxygen into the soil (mol/m2/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.o2status">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">o2status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">o2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fgas</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.o2status" title="Permalink to this definition">¶</a></dt>
+<dd><p>O2 Status</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>o2</strong> – Soil oxygen content (mol/m2)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)</p></li>
+<li><p><strong>fgas</strong> – Soil pore space (potentially gaseous) (m3/m3)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result O2</dt>
+<dd class="field-even"><p>Status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.penman">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">penman</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dtr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lai</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rnintc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.penman" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate potential rates of evaporation and transpiration (mm d-1)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>marcel van oijen (ceh-edinburgh)</p>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><p>Compute Penman and split E and T</p>
+</dd>
+</dl>
+<p>inputs = lai (m2 m-2), dtr (mj gr m-2 d-1), rnintc (mm d-1)
+inputs not in header = vp (kpa), wn (m s-1)
+outputs = pevap &amp; ptran (mm d-1)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dtr</strong> – Daily global radiation (MJ GR/m2/day)</p></li>
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>wn</strong> – Windspeed (m/s)</p></li>
+<li><p><strong>vp</strong> – Vapour Pressure (kPa)</p></li>
+<li><p><strong>lai</strong> – Leaf Area Index (m2 leaf /m2)</p></li>
+<li><p><strong>rnintc</strong> – Interception of precipitation by the canopy (mm/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result pevap</dt>
+<dd class="field-even"><p>Potential rate of evaporation from the soil (mm/day)</p>
+</dd>
+<dt class="field-odd">Result ptran</dt>
+<dd class="field-odd"><p>Potential transpiration rate (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.phenology">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">phenology</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">daylp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dayl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">daylb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phen</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phencr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dlmxge</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.phenology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Phenology</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>daylp</strong> – Day length below which phenological development slows down (d/d)</p></li>
+<li><p><strong>dayl</strong> – Day length (d/d)</p></li>
+<li><p><strong>daylb</strong> – Day length below which phenological stage is reset to zero (d/d)</p></li>
+<li><p><strong>phen</strong> – Phenological stage (-)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>phencr</strong> – Phenological stage above which elongation and appearance of leaves on elongating tillers decreases (-)</p></li>
+<li><p><strong>dlmxge</strong> – Day length below which DAYLGE becomes less than 1 (d/d)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result gphen</dt>
+<dd class="field-even"><p>Rate of phenological development (-/day)</p>
+</dd>
+<dt class="field-odd">Result dphen</dt>
+<dd class="field-odd"><p>Rate of decrease of phenological stage (-/day)</p>
+</dd>
+<dt class="field-even">Result phenrf</dt>
+<dd class="field-even"><p>Effect of phenological stage on leaf elongation and appearance in elongating tillers (-)</p>
+</dd>
+<dt class="field-odd">Result daylge</dt>
+<dd class="field-odd"><p>Day length effect on allocation, tillering, leaf appearance, leaf elongation (-)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.physics">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">physics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">was</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcfc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdasoil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rhowater</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latentheat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.physics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Physics update</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)</p></li>
+<li><p><strong>sdepth</strong> – Snow depth (m)</p></li>
+<li><p><strong>was</strong> – Soil water amount, solid (=ice) (mm)</p></li>
+<li><p><strong>gamma</strong> – Temperature extinction coefficient of snow (-/m)</p></li>
+<li><p><strong>wcl</strong> – Water concentration in non-frozen soil (m3/m3)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>wcfc</strong> – Water concentration at field capacity (m3/m3)</p></li>
+<li><p><strong>tsurf</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>lambdasoil</strong> – Soil parameter (J/m/C/day)</p></li>
+<li><p><strong>rhowater</strong> – Density of water (kg/m3)</p></li>
+<li><p><strong>latentheat</strong> – Latent heat of water fusion (J/kg)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result tsurf</dt>
+<dd class="field-even"><p>Soil surface temperature (C)</p>
+</dd>
+<dt class="field-odd">Result fperm</dt>
+<dd class="field-odd"><p>Flag for full soil depth Freezing (0/1)</p>
+</dd>
+<dt class="field-even">Result frate</dt>
+<dd class="field-even"><p>Rate of increase of frost layer depth (m/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.plantrespiration">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">plantrespiration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fo2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fo2mx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">respgrt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">respgsh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resphard</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.plantrespiration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plant Respiration</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fo2</strong> – Soil oxygen as a fraction of total gas (mol O2/mol gas)</p></li>
+<li><p><strong>fo2mx</strong> – Maximum oxygen fraction of soil gas (mol O2/mol gas)</p></li>
+<li><p><strong>respgrt</strong> – Respiration associated with root growth (g C/m2/day)</p></li>
+<li><p><strong>respgsh</strong> – Respiration associated with shoot growth (g C/m2/day)</p></li>
+<li><p><strong>resphard</strong> – Plant hardening respiration (g C/m2/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result rplantaer</dt>
+<dd class="field-even"><p>Aerobic plant respiration (g C/m2/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.precform">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">precform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainsnow</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rain</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.precform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Partition rainfall volume into either potential water or potential snow depending on temperature</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>trainsnow</strong> – Temperature below which precipitation is snow (Celsius)</p></li>
+<li><p><strong>rain</strong> – Rainfall (mm/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result pwater</dt>
+<dd class="field-even"><p>Potential water available from rain (mm/day)</p>
+</dd>
+<dt class="field-odd">Result psnow</dt>
+<dd class="field-odd"><p>Potential snow available from rain (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.rainsnowsurfacepool">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">rainsnowsurfacepool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainsnow</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ampl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmeltfreeze</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">melt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swret</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swrf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drystor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snowmelt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wetstor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refreeze</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwater</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wavail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rhopack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lai</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poolinfillimit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinfil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wpoolmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wapl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poolvolremain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poolinfil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdaice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rhowater</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latentheat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freezepl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">infil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">packmelt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pooldrain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thawps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wremain</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.rainsnowsurfacepool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rain Snow Surface Pool</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>trainsnow</strong> – Temperature below which precipitation is snow (Celsius)</p></li>
+<li><p><strong>rain</strong> – Rainfall (mm/day)</p></li>
+<li><p><strong>bias</strong> – Average snow melting rate at 1 degree above ‘TmeltFreeze’ (mm/degreeCelsius/day)</p></li>
+<li><p><strong>ampl</strong> – Intra-annual amplitude snow melt at 1 degree &gt; ‘TmeltFreeze’ (mm/degreeCelsius/day)</p></li>
+<li><p><strong>freq</strong> – Unit conversion time to annual cycle (radians/day)</p></li>
+<li><p><strong>doy</strong> – Day Of Year (1-366)</p></li>
+<li><p><strong>tmeltfreeze</strong> – Temperature above which snow melts (Celsius)</p></li>
+<li><p><strong>melt</strong> – Potential snow melt rate per degree above TmeltFreeze (mm/C/day)</p></li>
+<li><p><strong>swret</strong> – Liquid water storage capacity of snow (mm/mm/day)</p></li>
+<li><p><strong>swrf</strong> – Maximum refreezing rate per degree below ‘TmeltFreeze’ (mm/day/Celsius)</p></li>
+<li><p><strong>drystor</strong> – Snow amount as SWE (Soil Water Equivalent)</p></li>
+<li><p><strong>snowmelt</strong> – Snow melting (mm/day)</p></li>
+<li><p><strong>wetstor</strong> – Liquid water in snow (mm)</p></li>
+<li><p><strong>refreeze</strong> – Freezing of liquid water stored in snow (mm/day)</p></li>
+<li><p><strong>pwater</strong> – Potential water available from rain (mm/day)</p></li>
+<li><p><strong>wavail</strong> – Liquid water from rain, snow melt and storage in snow (mm/day)</p></li>
+<li><p><strong>sdepth</strong> – Snow depth (m)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>rhopack</strong> – Relative packing rate of snow (-/day)</p></li>
+<li><p><strong>lai</strong> – Leaf Area Index (m2 leaf / m2)</p></li>
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>poolinfillimit</strong> – Soil frost depth limit for water infiltration (m)</p></li>
+<li><p><strong>pinfil</strong> – Infil of Pool (Wsupply - RNINTC) (mm/day)</p></li>
+<li><p><strong>wpoolmax</strong> – Maximum pool water (liquid plus ice) (mm)</p></li>
+<li><p><strong>wapl</strong> – Pool water amount, liquid (mm)</p></li>
+<li><p><strong>waps</strong> – Pool water amount, solid (=ice) (mm)</p></li>
+<li><p><strong>runon</strong> – Water in excess of what can infiltrate the soil (mm/day)</p></li>
+<li><p><strong>poolvolremain</strong> – Unused capacity of surface pool (mm/day)</p></li>
+<li><p><strong>poolinfil</strong> – Water flow to pool from other sources than ice thawing (mm/day)</p></li>
+<li><p><strong>frate</strong> – Rate of increase of frost layer depth (m/day)</p></li>
+<li><p><strong>tsurf</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>lambdaice</strong> – Thermal conductivity of ice (J/m/K/day)</p></li>
+<li><p><strong>rhowater</strong> – Density of water (kg/m3)</p></li>
+<li><p><strong>latentheat</strong> – Latent heat of water fusion (J/kg)</p></li>
+<li><p><strong>eta</strong> – Compound parameter (= LAMBDAice/(RHOwater*LatentHeat)) (m2/K/day)</p></li>
+<li><p><strong>freezepl</strong> – Freezing rate of pool water (mm/day)</p></li>
+<li><p><strong>infil</strong> – Water flow into soil from precipitation and snow melt (mm/day)</p></li>
+<li><p><strong>packmelt</strong> – Loss of snow height by packing and by melting (m/day)</p></li>
+<li><p><strong>pooldrain</strong> – Water flow from pool to soil (mm/day)</p></li>
+<li><p><strong>thawps</strong> – Rate of surface ice thawing (mm/day)</p></li>
+<li><p><strong>wremain</strong> – Liquid water staying in snow pack (mm/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result pwater</dt>
+<dd class="field-even"><p>Potential water available from rain (mm/day)</p>
+</dd>
+<dt class="field-odd">Result psnow</dt>
+<dd class="field-odd"><p>Potential snow available from rain (mm/day)</p>
+</dd>
+<dt class="field-even">Result snowmelt</dt>
+<dd class="field-even"><p>Snow melting (mm/day)</p>
+</dd>
+<dt class="field-odd">Result wmaxstore</dt>
+<dd class="field-odd"><p>Liquid water storage capacity of the snowpack (mm/day)</p>
+</dd>
+<dt class="field-even">Result refreeze</dt>
+<dd class="field-even"><p>Freezing of liquid water stored in snow (mm/day)</p>
+</dd>
+<dt class="field-odd">Result staywet</dt>
+<dd class="field-odd"><p>Liquid water in snow remaining liquid (mm/day)</p>
+</dd>
+<dt class="field-even">Result wavail</dt>
+<dd class="field-even"><p>Liquid water from rain, snow melt and storage in snow (mm/day)</p>
+</dd>
+<dt class="field-odd">Result wremain</dt>
+<dd class="field-odd"><p>Liquid water staying in snow pack (mm/day)</p>
+</dd>
+<dt class="field-even">Result wsupply</dt>
+<dd class="field-even"><p>Liquid water not staying in snow pack (mm/day)</p>
+</dd>
+<dt class="field-odd">Result density</dt>
+<dd class="field-odd"><p>Density of snow (m3/kg)</p>
+</dd>
+<dt class="field-even">Result packmelt</dt>
+<dd class="field-even"><p>Loss of snow height by packing and by melting (m/day)</p>
+</dd>
+<dt class="field-odd">Result rnintc</dt>
+<dd class="field-odd"><p>Interception of precipitation by the canopy (mm/day)</p>
+</dd>
+<dt class="field-even">Result pinfil</dt>
+<dd class="field-even"><p>Infil of Pool (Wsupply - RNINTC) (mm/day)</p>
+</dd>
+<dt class="field-odd">Result runon</dt>
+<dd class="field-odd"><p>Water in excess of what can infiltrate the soil (mm/day)</p>
+</dd>
+<dt class="field-even">Result freezepl</dt>
+<dd class="field-even"><p>Freezing rate of pool water (mm/day)</p>
+</dd>
+<dt class="field-odd">Result thawps</dt>
+<dd class="field-odd"><p>Rate of surface ice thawing (mm/day)</p>
+</dd>
+<dt class="field-even">Result pooldrain</dt>
+<dd class="field-even"><p>Water flow from pool to soil (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.rootdg">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">rootdg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootdm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcwp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rrdmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wcfc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.rootdg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Root Depth “g?”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)</p></li>
+<li><p><strong>wal</strong> – Soil water amount: liquid (mm)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)m Initial and maximum value rooting depth (m)</p></li>
+<li><p><strong>wcwp</strong> – Water concentration at wilting point (m3/m3)</p></li>
+<li><p><strong>rrdmax</strong> – Maximum root depth growth rate (m/day)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>wcfc</strong> – Water concentration at field capacity (m3/m3)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result wcl</dt>
+<dd class="field-even"><p>Water concentration in non-frozen soil (m3/m3)</p>
+</dd>
+<dt class="field-odd">Result rrootd</dt>
+<dd class="field-odd"><p>Root depth growth rate (m/day)</p>
+</dd>
+<dt class="field-even">Result explor</dt>
+<dd class="field-even"><p>Increased access to water by root depth growth (m/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.senescence">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">senescence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">permgas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tanaer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ldt50a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ldt50b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krdranaer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">krsr3h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dparam</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt50mx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurfdiff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratedmx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resphard</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kresphard</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lai</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">laicr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdrsco</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdrsmx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdrtmin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdrtem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noharv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cstub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdrstub</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tilv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rdroot</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.senescence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Senescence Function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>permgas</strong> – Permeability of soil surface to gas exchange (-/day)</p></li>
+<li><p><strong>tanaer</strong> – Start anaerobic conditions (day)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>ldt50a</strong> – Intercept of linear dependence of LD50 on lT50 (day)</p></li>
+<li><p><strong>ldt50b</strong> – Slope of linear dependence of LD50 on LT50 (day/C)</p></li>
+<li><p><strong>lt50</strong> – Sensitivity to Frost (Lethal Temperature 50%) Temperature that kills half the plants in a day (C)</p></li>
+<li><p><strong>krdranaer</strong> – Maximum relative death rate due to anearobic conditions (-/day)</p></li>
+<li><p><strong>krsr3h</strong> – Constant in the logistic curve for frost survival (-/C)</p></li>
+<li><p><strong>tsurf</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>dparam</strong> – Constant in the calculation of dehardening rate (-/C/day)</p></li>
+<li><p><strong>lt50mx</strong> – Maximum LT50 (C)</p></li>
+<li><p><strong>tsurfdiff</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>ratedmx</strong> – Maximum dehardening rate (C/day)</p></li>
+<li><p><strong>resphard</strong> – Plant hardening respiration (g C/m2/day)</p></li>
+<li><p><strong>clv</strong> – Carbon in leaves (g C/m2)</p></li>
+<li><p><strong>kresphard</strong> – Carbohydrate requirement of hardening (g C/ g C /C)</p></li>
+<li><p><strong>lai</strong> – Leaf Area Index (m2 leaf / m2)</p></li>
+<li><p><strong>laicr</strong> – LAI above which shading induces leaf senescence (m2 leaf / m2)</p></li>
+<li><p><strong>rdrsco</strong> – Relative death rate of leaves and non-elongating tillers due to shading when LAI is twice the threshold (LAICR) (-/day)</p></li>
+<li><p><strong>rdrsmx</strong> – Maximum relative death rate of leaves and non-elongating tillers due to shading (-/day)</p></li>
+<li><p><strong>rdrtmin</strong> – Minimum relative death rate of foliage (-/day)</p></li>
+<li><p><strong>rdrtem</strong> – Proportionality of leaf senescence with temperature (-/day/C)</p></li>
+<li><p><strong>noharv</strong> – Flag indicating that the current day is not a harvest day (-)</p></li>
+<li><p><strong>cstub</strong> – Carbon in stubble (g C/m2)</p></li>
+<li><p><strong>rdrstub</strong> – Relative death rate of stubble (-/day)</p></li>
+<li><p><strong>tilv</strong> – Non-elongating tiller density (-/m2)</p></li>
+<li><p><strong>crt</strong> – Carbon in roots (g C/m2)</p></li>
+<li><p><strong>rdroot</strong> – Relative death rate of roots (-/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result dtanaer</dt>
+<dd class="field-even"><p>Change in days since start anaerobic conditions (day/day)</p>
+</dd>
+<dt class="field-odd">Result hardrate</dt>
+<dd class="field-odd"><p>Hardening (LT50 becoming more negative) (C/day)</p>
+</dd>
+<dt class="field-even">Result dehardrate</dt>
+<dd class="field-even"><p>Dehardening rate (LT50 becoming less negative) (C/day)</p>
+</dd>
+<dt class="field-odd">Result tv2til</dt>
+<dd class="field-odd"><p>Relative death rate of non-elongating tillers (-/day)</p>
+</dd>
+<dt class="field-even">Result dlai</dt>
+<dd class="field-even"><p>Death rate of leaf area (m2 leaf /m2/day)</p>
+</dd>
+<dt class="field-odd">Result dlv</dt>
+<dd class="field-odd"><p>Death rate of leaf mass (g C/m2/day)</p>
+</dd>
+<dt class="field-even">Result dstub</dt>
+<dd class="field-even"><p>Death rate of stubble (g C/m2/day)</p>
+</dd>
+<dt class="field-odd">Result dtilv</dt>
+<dd class="field-odd"><p>Death rate of non-elongating tillers (tillers/m2/day)</p>
+</dd>
+<dt class="field-even">Result drt</dt>
+<dd class="field-even"><p>Death rate of roots (g C/m2/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.snowdensity">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">snowdensity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drystor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wetstor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sdepth</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.snowdensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snow Density</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>drystor</strong> – Snow amount as SWE (Soil Water Equivalent)</p></li>
+<li><p><strong>wetstor</strong> – Liquid water in snow (mm)</p></li>
+<li><p><strong>sdepth</strong> – Snow depth (m)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result density</dt>
+<dd class="field-even"><p>Snow Density (m3/kg)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.snowdepthdecrease">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">snowdepthdecrease</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rhopack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snowmelt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.snowdepthdecrease" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snow Depth Decrease</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sdepth</strong> – Snow depth (m)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>rhopack</strong> – Relative packing rate of snow (-/day)</p></li>
+<li><p><strong>snowmelt</strong> – Snow melting (mm/day)</p></li>
+<li><p><strong>density</strong> – Density of snow (m3/kg)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result snowdepth</dt>
+<dd class="field-even"><p>Decrease in snow depth</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.snowmeltwmaxstore">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">snowmeltwmaxstore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bias</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ampl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmeltfreeze</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drystor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">melt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swret</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.snowmeltwmaxstore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Snow Melt Water Max Storage</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bias</strong> – Average snow melting rate at 1 degree above ‘TmeltFreeze’ (mm/degreeCelsius/day)</p></li>
+<li><p><strong>ampl</strong> – Intra-annual amplitude snow melt at 1 degree &gt; ‘TmeltFreeze’ (mm/degreeCelsius/day)</p></li>
+<li><p><strong>freq</strong> – Unit conversion time to annual cycle (radians/day)</p></li>
+<li><p><strong>doy</strong> – Day Of Year (1-366)</p></li>
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>tmeltfreeze</strong> – Temperature above which snow melts (Celsius)</p></li>
+<li><p><strong>drystor</strong> – Snow amount as SWE (Soil Water Equivalent)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>melt</strong> – Potential snow melt rate per degree above TmeltFreeze (mm/C/day)</p></li>
+<li><p><strong>swret</strong> – Liquid water storage capacity of snow (mm/mm/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result snowmelt</dt>
+<dd class="field-even"><p>Snow melting (mm/day)</p>
+</dd>
+<dt class="field-odd">Result wmaxstore</dt>
+<dd class="field-odd"><p>Liquid water storage capacity of the snowpack (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.soilwatercontent">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">soilwatercontent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rootd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wal</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.soilwatercontent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate and return wcl</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>rootd</strong> – Rooting depth (m)</p></li>
+<li><p><strong>wal</strong> – Soil water amount, liquid (mm)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result wcl</dt>
+<dd class="field-even"><p>Water concentration in non-frozen soil (m3/m3)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.surfacepool">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">surfacepool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wpoolmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wapl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poolvolremain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poolinfil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poolinfillimit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsurf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lambdaice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rhowater</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latentheat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.surfacepool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Surface Pool</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wpoolmax</strong> – Maximum pool water (liquid plus ice) (mm)</p></li>
+<li><p><strong>wapl</strong> – Pool water amount, liquid (mm)</p></li>
+<li><p><strong>waps</strong> – Pool water amount, solid (=ice) (mm)</p></li>
+<li><p><strong>runon</strong> – Water in excess of what can infiltrate the soil (mm/day)</p></li>
+<li><p><strong>poolvolremain</strong> – Unused capacity of surface pool (mm/day)</p></li>
+<li><p><strong>poolinfil</strong> – Water flow to pool from other sources than ice thawing (mm/day)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>fdepth</strong> – Soil frost layer depth (m)</p></li>
+<li><p><strong>poolinfillimit</strong> – Soil frost depth limit for water infiltration (m)</p></li>
+<li><p><strong>frate</strong> – Rate of increase of frost layer depth (m/day)</p></li>
+<li><p><strong>tsurf</strong> – Soil surface temperature (C)</p></li>
+<li><p><strong>lambdaice</strong> – Thermal conductivity of ice (J/m/K/day)</p></li>
+<li><p><strong>rhowater</strong> – Density of water (kg/m3)</p></li>
+<li><p><strong>latentheat</strong> – Latent heat of water fusion (J/kg)</p></li>
+<li><p><strong>eta</strong> – Compound parameter (= LAMBDAice/(RHOwater*LatentHeat)) (m2/K/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result freezepl</dt>
+<dd class="field-even"><p>Freezing of pool water (mm/day)</p>
+</dd>
+<dt class="field-odd">Result thawps</dt>
+<dd class="field-odd"><p>Rate of surface ice thawing (mm/day)</p>
+</dd>
+<dt class="field-even">Result pooldrain</dt>
+<dd class="field-even"><p>Water flow from pool to soil (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.watersnow">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">watersnow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bias</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ampl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmeltfreeze</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drystor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">melt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swret</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swrf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wetstor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refreeze</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwater</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wavail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sdepth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rhopack</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.watersnow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Water Snow</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bias</strong> – Average snow melting rate at 1 degree above ‘TmeltFreeze’ (mm/degreeCelsius/day)</p></li>
+<li><p><strong>ampl</strong> – Intra-annual amplitude snow melt at 1 degree &gt; ‘TmeltFreeze’ (mm/degreeCelsius/day)</p></li>
+<li><p><strong>freq</strong> – Unit conversion time to annual cycle (radians/day)</p></li>
+<li><p><strong>doy</strong> – Day Of Year (1-366)</p></li>
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>tmeltfreeze</strong> – Temperature above which snow melts (Celsius)</p></li>
+<li><p><strong>drystor</strong> – Snow amount as SWE (Soil Water Equivalent)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+<li><p><strong>melt</strong> – Potential snow melt rate per degree above TmeltFreeze (mm/C/day)</p></li>
+<li><p><strong>swret</strong> – Liquid water storage capacity of snow (mm/mm/day)</p></li>
+<li><p><strong>swrf</strong> – Maximum refreezing rate per degree below ‘TmeltFreeze’ (mm/day/Celsius)</p></li>
+<li><p><strong>wetstor</strong> – Liquid water in snow (mm)</p></li>
+<li><p><strong>refreeze</strong> – Freezing of liquid water stored in snow (mm/day)</p></li>
+<li><p><strong>pwater</strong> – Potential water available from rain (mm/day)</p></li>
+<li><p><strong>wavail</strong> – Liquid water from rain, snow melt and storage in snow (mm/day)</p></li>
+<li><p><strong>sdepth</strong> – Snow depth (m)</p></li>
+<li><p><strong>rhopack</strong> – Relative packing rate of snow (-/day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result snowmelt</dt>
+<dd class="field-even"><p>Snow melting (mm/day)</p>
+</dd>
+<dt class="field-odd">Result wmaxstore</dt>
+<dd class="field-odd"><p>Liquid water storage capacity of the snowpack (mm/day)</p>
+</dd>
+<dt class="field-even">Result refreeze</dt>
+<dd class="field-even"><p>Freezing of liquid water stored in snow (mm/day)</p>
+</dd>
+<dt class="field-odd">Result staywet</dt>
+<dd class="field-odd"><p>Liquid water in snow remaining liquid (mm/day)</p>
+</dd>
+<dt class="field-even">Result wavail</dt>
+<dd class="field-even"><p>Liquid water from rain, snow melt and storage in snow (mm/day)</p>
+</dd>
+<dt class="field-odd">Result wremain</dt>
+<dd class="field-odd"><p>Liquid water staying in snow pack (mm/day)</p>
+</dd>
+<dt class="field-even">Result wsupply</dt>
+<dd class="field-even"><p>Liquid water not staying in snow pack (mm/day)</p>
+</dd>
+<dt class="field-odd">Result density</dt>
+<dd class="field-odd"><p>Density of snow (m3/kg)</p>
+</dd>
+<dt class="field-even">Result packmelt</dt>
+<dd class="field-even"><p>Loss of snow height by packing and by melting (m/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lib_basgra.wetstordynamics">
+<span class="sig-prename descclassname"><span class="pre">lib_basgra.</span></span><span class="sig-name descname"><span class="pre">wetstordynamics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">swrf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmeltfreeze</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">davtmp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wetstor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lib_basgra.wetstordynamics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wet Storage Dynamics</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>swrf</strong> – Maximum refreezing rate per degree below ‘TmeltFreeze’ (mm/day/Celsius)</p></li>
+<li><p><strong>tmeltfreeze</strong> – Temperature above which snow melts (Celsius)</p></li>
+<li><p><strong>davtmp</strong> – Daily average temperature (Celsius)</p></li>
+<li><p><strong>wetstor</strong> – Liquid water in snow (mm)</p></li>
+<li><p><strong>delt</strong> – Model time step (day)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Result refreeze</dt>
+<dd class="field-even"><p>Freezing of liquid water stored in snow (mm/day)</p>
+</dd>
+<dt class="field-odd">Result staywet</dt>
+<dd class="field-odd"><p>Liquid water in snow remaining liquid (mm/day)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, XXXXXX.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> and ❤️  using a custom <a href="https://github.com/LinxiFan/Sphinx-theme">theme</a> based on <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
