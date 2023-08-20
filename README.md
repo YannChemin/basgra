@@ -1,5 +1,7 @@
 # basgra model
 
+NOTE: The newest version of this code is published as EUPL in https://code.europa.eu/agri4cast
+
 Python development version of BASGRA model
 
 ## Output 
